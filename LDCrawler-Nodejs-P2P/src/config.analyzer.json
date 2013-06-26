@@ -1,0 +1,35 @@
+{
+	"url_generator":[
+		{
+			"pattern":".*"
+			,"handler":"./analyzers.extract_same_domain"
+		}
+	]
+	,"parser":[
+		{
+			"pattern":".*"
+			,"handler":"./analyzers.save_to_db"
+		}	
+		,{
+			"pattern":".*"
+			,"handler":"./analyzers.save_to_db"
+		}	
+	]
+	,"saver":[
+		{
+			"path":"../data/saving.json"
+			,"pattern":".*"
+			,"handler":"function(url,html){var obj = {}; obj[url] = html; return obj; }"
+		}
+		,{
+			"path":"../data/saving2.json"
+			,"pattern":".*"
+			,"handler":"function(url,html){var obj = {}; obj[url] = html; return obj; }"
+		}
+		,{
+			"path":"../data/saving3.json"
+			,"pattern":".*"
+			,"handler":"function(url,html){var obj = {}; obj[url] = html; return obj; }"
+		}
+	]		
+}

@@ -1,4 +1,4 @@
-these are crawler demos build on different languages or framworks
+these are collection of crawler demos build on different languages or framworks
 they are commomly consist of modules:
 	dispatcher	: job & queue logic
 	fetcher		: fetch logic, given urls and return html contents
@@ -7,5 +7,10 @@ they are commomly consist of modules:
 	linkbase	: link summary database
 different port may vary a little bit from each other
 
-current edition
+current edition :
 	LDCrawler-Bash	: mainly construct in bash scripts, mixed with a little php & cpp
+	LDCrawler-Nodejs-P2P : build with nodejs, a p2p version
+
+on the road-map :
+	LDCrawler-Storm : build with storm
+	LDCrawler-Nodejs-MasterWorker : build with nodejs, a master-worker version

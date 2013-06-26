@@ -1,0 +1,10 @@
+this is a simple crawler system on linux
+	./bin/  contains the manipulators of the system, may be binaries or scripts 
+	./conf/ contains the config files
+	./src/  contains the source codes 
+you may need to add the following documents for running 
+	./data/pagebase/
+	./data/linkbase/
+	./tmp/
+	./log/
+for more config infomations, check the files under ./conf/

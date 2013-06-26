@@ -1,10 +1,11 @@
-this is a simple crawler system on linux
-	./bin/  contains the manipulators of the system, may be binaries or scripts 
-	./conf/ contains the config files
-	./src/  contains the source codes 
-you may need to add the following documents for running 
-	./data/pagebase/
-	./data/linkbase/
-	./tmp/
-	./log/
-for more config infomations, check the files under ./conf/
+these are crawler demos build on different languages or framworks
+they are commomly consist of modules:
+	dispatcher	: job & queue logic
+	fetcher		: fetch logic, given urls and return html contents
+	analyzer	: analyze html to extract infomation & next urls
+	pagebase	: page content database
+	linkbase	: link summary database
+different port may vary a little bit from each other
+
+current edition
+	LDCrawler-Bash	: mainly construct in bash scripts, mixed with a little php & cpp
